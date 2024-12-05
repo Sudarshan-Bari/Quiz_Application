@@ -1,0 +1,116 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+#choices {
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#submit, #restart {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.choice {
+    background-color: #3a3a3a;
+    border: 1px solid #4a4a4a;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.choice:hover {
+    background-color: #4a4a4a;
+}
+
+.choice.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.choice.correct {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.choice.incorrect {
+    background-color: #f44336;
+    color: white;
+}
+
+.hide {
+    display: none;
+}
+
+#results {
+    text-align: center;
+}
+
+#score {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+#progress {
+    width: 100%;
+    background-color: #3a3a3a;
+    border-radius: 4px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 10px;
+    background-color: #4CAF50;
+    transition: width 0.3s;
+}
